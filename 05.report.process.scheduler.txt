@@ -1,0 +1,23 @@
+1...
+/proc/sched_debug|grep "systemd"
+         systemd     1       354.564073      1950   120         0.000000      1353.747673         0.000000 0 0 /autogroup-2
+ systemd-journal   272        54.511193       958   120         0.000000       312.781730         0.000000 0 0 /autogroup-9
+  systemd-logind   910         9.142281       626   120         0.000000        44.714451         0.000000 0 0 /autogroup-47
+         systemd  2088         1.149659        18   120         0.000000        22.753260         0.000000 0 0 /autogroup-110
+   systemd-udevd   292       975.826870       586   120         0.000000      1344.888153         0.000000 0 0 /autogroup-12
+
+2...
+cat /proc/1/sched
+systemd (1, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :       2745457.381848
+se.vruntime                                  :           364.691011
+se.sum_exec_runtime                          :          1363.874611
+se.nr_migrations                             :                  283
+nr_switches                                  :                 1965
+nr_voluntary_switches                        :                 1644
+nr_involuntary_switches                      :                  321
+se.load.weight                               :              1048576
+se.avg.load_sum                              :               307200
+se.avg.util_sum                              :               302080
+
