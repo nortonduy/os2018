@@ -1,0 +1,32 @@
+1.
+nortonduy@Duy:~$ ls | grep "list"
+//nothing appears
+
+2.
+nortonduy@Duy:~$ wc -l /etc/passwd
+41 /etc/passwd
+
+3.
+nortonduy@Duy:~$ free -h | grep Mem: | awk '{print $2}'
+7,7G
+
+4.
+nortonduy@Duy:~$ cat /proc/cpuinfo | grep core
+core id		: 0
+cpu cores	: 2
+core id		: 1
+cpu cores	: 2
+core id		: 0
+cpu cores	: 2
+core id		: 1
+cpu cores	: 2
+
+5.
+nortonduy@Duy:~$ find ~/Pictures | grep .jpg | wc -l
+0
+
+=====================================================================
+Student Info
+
+* Name: Dao Anh Duy
+* ID: *USTHBI5-027*
