@@ -1,0 +1,52 @@
+1.
+nortonduy@Duy:~$ ps -eLf
+UID        PID  PPID   LWP  C NLWP STIME TTY          TIME CMD
+root         1     0     1  0    1 07:16 ?        00:00:01 /sbin/init splash
+root         2     0     2  0    1 07:16 ?        00:00:00 [kthreadd]
+root         3     2     3  0    1 07:16 ?        00:00:00 [kworker/0:0]
+root         4     2     4  0    1 07:16 ?        00:00:00 [kworker/0:0H]
+root         6     2     6  0    1 07:16 ?        00:00:00 [mm_percpu_wq]
+root         7     2     7  0    1 07:16 ?        00:00:00 [ksoftirqd/0]
+root         8     2     8  0    1 07:16 ?        00:00:00 [rcu_sched]
+root         9     2     9  0    1 07:16 ?        00:00:00 [rcu_bh]
+root        10     2    10  0    1 07:16 ?        00:00:00 [migration/0]
+root        11     2    11  0    1 07:16 ?        00:00:00 [watchdog/0]
+
+2.
+nortonduy@Duy:~$ gnome-calculator &
+[1] 7289
+
+3.
+nortonduy@Duy:~$ ps | grep cal | awk '{print $1}'
+7289
+
+4.
+nortonduy@Duy:~$ cat /proc/7289/status
+Name:	gnome-calculato
+Umask:	0002
+State:	S (sleeping)
+Tgid:	7289
+Ngid:	0
+Pid:	7289
+PPid:	7255
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+5.
+nortonduy@Duy:~$ kill -STOP 7289
+
+[1]+  Stopped                 gnome-calculator
+
+6.
+nortonduy@Duy:~$ kill -CONT 7289
+
+7.
+nortonduy@Duy:~$ kill -KILL 7289
+
+=====================================================================
+Student Info
+
+* Name: Dao Anh Duy
+* ID: *USTHBI5-027*
+
