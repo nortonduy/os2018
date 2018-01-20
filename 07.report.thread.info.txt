@@ -1,0 +1,17 @@
+1.
+nortonduy@Duy:~/os2018$ ps -e | grep firefox | awk '{print $1}'
+3139
+nortonduy@Duy:~/os2018$ ps -o nlwp 3139
+NLWP
+  62
+
+2.
+nortonduy@Duy:~$ cd /proc/3139/task/
+nortonduy@Duy:/proc/3139/task$ find . -mindepth 1 -maxdepth 1 -type d | wc -l
+62
+
+=====================================================================
+Student Info
+
+* Name: Dao Anh Duy
+* ID: *USTHBI5-027*
