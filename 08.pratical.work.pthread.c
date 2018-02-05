@@ -62,12 +62,6 @@ void *threadFuncConsume(void *param) {
 	printf("After consume: First: %d, Last: %d\n", first, last);
 }
 
-int pthread_create(
-	pthread_t *thread,
-	const pthread_attr_t *attr,
-	void *(*start_routine) (void *),
-	void *arg);
-
 int main() {
 	pthread_t tid1;
 	pthread_create(&tid1, NULL, threadFuncProduce, NULL);

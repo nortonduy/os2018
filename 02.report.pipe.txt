@@ -25,8 +25,3 @@ cpu cores	: 2
 nortonduy@Duy:~$ find ~/Pictures | grep .jpg | wc -l
 0
 
-=====================================================================
-Student Info
-
-* Name: Dao Anh Duy
-* ID: *USTHBI5-027*

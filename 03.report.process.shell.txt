@@ -44,9 +44,4 @@ nortonduy@Duy:~$ kill -CONT 7289
 7.
 nortonduy@Duy:~$ kill -KILL 7289
 
-=====================================================================
-Student Info
-
-* Name: Dao Anh Duy
-* ID: *USTHBI5-027*
 

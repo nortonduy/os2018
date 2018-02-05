@@ -12,10 +12,3 @@ nortonduy@Duy:~$ cat /proc/1419/sched | grep switches
 nr_switches                                  :                   14
 nr_voluntary_switches                        :                   11
 nr_involuntary_switches                      :                    3
-
-
-=====================================================================
-Student Info
-
-* Name: Dao Anh Duy
-* ID: *USTHBI5-027*
